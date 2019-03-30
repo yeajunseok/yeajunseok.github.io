@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "ko"
 title                    : "Data Science"
 title_separator          : "-"
 name                     : "YeaJunSeok"
@@ -65,8 +65,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_full_content      : true #true, false (default)
+search_provider          : lunr #lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
