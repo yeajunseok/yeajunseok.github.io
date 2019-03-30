@@ -1,19 +1,22 @@
 ---
-title: "[Machine Learning] 기계의 학습법"
+title: "연습공간 기계의 학습법"
 strapline: "How the machine learns."
 description: "기계 학습 (Machine learning) 프레임워크에 기반한 공부 방법론"
 header:
  overlay_image: /assets/images/overlayimage.jpg
 categories:
-  - "Machine Learning"
+  - "연습장"
 classes: wide
 tag:
-  - "머신러닝"
-  - "기계학습"
+  - "연습장"
+  - "연습장"
 toc: true
 ---
 
-
+# 연습공간
+classes: wide
+toc: true
+하면 옆으로 길게, to는 위쪽으로
 
 2016년 3월, 불가능 할 것으로 여겨졌던 바둑이 인공 지능 (Artificial Intelligence, AI)에 의해 정복당했다.  구글 딥마인드 (Google DeepMind)가 개발한 인공 지능 바둑 프로그램인 알파고 (AlphaGo)는 바둑천재 이세돌을 상대로 4승 1패의 성공적인 결과를 얻었다.
 
