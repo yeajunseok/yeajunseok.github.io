@@ -1,9 +1,8 @@
 ---
-title: "minimal mistakes github.io"
+title: "첫 포스틩"
 categories: 
   - blogging
 toc: true
 ---
-Abbott: Strange as it may seem, they give ball players nowadays very peculiar names.
-
-Costello: Funny names?
+첫 포스틩
+minimal mistakes 
