@@ -1,5 +1,7 @@
 ---
 title: "2.0 NumPy로 공부하는 선형대수"
+header:
+ overlay_image: /assets/images/overlayimage.jpg
 categories: 
   - 데이터 과학을 위한 수학[선형대수]
 tags:
