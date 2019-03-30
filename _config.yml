@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Data Science"
+title                    : "Data Science & Infra engineering"
 title_separator          : "-"
 name                     : "YeaJunSeok"
 description              : "데이터 사이언스로 가는 여정~"
@@ -114,7 +114,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      #url:  "yeajunseok@gmail.com
+      url:  "yeajunseok@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -129,7 +129,7 @@ author:
       url: "https://github.com/yeajunseok/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/yeajunseok"
 
 # Site Footer
 footer:
