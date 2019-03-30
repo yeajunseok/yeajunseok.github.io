@@ -1,5 +1,5 @@
 ---
-title: "연습공간 기계의 학습법"
+title: "연습공간, 기계의 학습법"
 strapline: "How the machine learns."
 description: "기계 학습 (Machine learning) 프레임워크에 기반한 공부 방법론"
 header:
