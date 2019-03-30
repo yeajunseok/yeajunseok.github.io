@@ -2,6 +2,8 @@
 title: "2장 NumPy로 공부하는 선형대수"
 categories: 
   - 데이터 과학을 위한 수학
+tags:
+  - 선형대수
 toc: true
 toc_label: "My Table of Contents" 
 toc_sticky: true
