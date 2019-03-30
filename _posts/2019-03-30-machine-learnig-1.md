@@ -6,6 +6,7 @@ header:
  overlay_image: /assets/images/overlayimage.jpg
 categories:
   - "Machine Learning"
+classes: wide
 tag:
   - "머신러닝"
   - "기계학습"
