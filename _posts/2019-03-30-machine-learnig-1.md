@@ -5,11 +5,10 @@ description: "기계 학습 (Machine learning) 프레임워크에 기반한 공�
 header:
  overlay_image: /assets/images/overlayimage.jpg
 categories:
-  - "연습장"
+  - "연습공간"
 classes: wide
 tag:
-  - "연습장"
-  - "연습장"
+  - "연습공간"
 toc: true
 ---
 
