@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      #url: "https://github.com/yeajunseok/"
+      url: "https://github.com/yeajunseok/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -289,9 +289,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true # 해당 포스트를 읽은 시간이 표시되는데 기본값은 true이다.
+      read_time: true
+      #read_time: true 해당 포스트를 읽은 시간이 표시되는데 기본값은 true이다.
       comments: # true
-      share: true # 포스트 공유 기능을 활성화 할 것인지 정한다. 기본값은 true이다.
+      share: true
+      #share: true 포스트 공유 기능을 활성화 할 것인지 정한다. 기본값은 true이다.
       related: true
   # _pages
   - scope:
