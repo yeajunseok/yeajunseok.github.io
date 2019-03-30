@@ -15,14 +15,14 @@
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "Data Science"
 title_separator          : "-"
 name                     : "YeaJunSeok"
 description              : "데이터 사이언스로 가는 여정~"
 url                      : "https://yeajunseok.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "yeajunseok/yeajunseok.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -109,12 +109,12 @@ author:
   name             : "yeajunseok_author"
   avatar           : "/assets/images/yeajunseok.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "Seoul, Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url:  "yeajunseok@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -289,9 +289,9 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: true # 해당 포스트를 읽은 시간이 표시되는데 기본값은 true이다.
       comments: # true
-      share: true
+      share: true # 포스트 공유 기능을 활성화 할 것인지 정한다. 기본값은 true이다.
       related: true
   # _pages
   - scope:
