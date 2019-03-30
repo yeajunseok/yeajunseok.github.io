@@ -64,7 +64,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -206,7 +206,7 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 2..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
@@ -221,7 +221,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
 
 
 # Plugins (previously gems:)
