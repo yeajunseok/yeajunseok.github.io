@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Yea JunSeok"
-  avatar           : "/assets/images/yeajunseok.jpg"
+  avatar           : "/assets/images/data-analysis.jpg"
   bio              : "정리 공간입니다~"
   location         : "Seoul, Korea"
   email            :
@@ -115,9 +115,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url:  "yeajunseok@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -129,7 +129,7 @@ author:
       url: "https://github.com/yeajunseok/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/yeajunseok"
+    #  url: "https://instagram.com/yeajunseok"
 
 # Site Footer
 footer:
