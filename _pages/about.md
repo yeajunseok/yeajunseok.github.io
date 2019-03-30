@@ -5,38 +5,20 @@ toc: true
 ---
 ## Biography
 
-Seunghyoung Ryu received the B.S. and M.S. degree in the Electronic Engineering from Sogang University, South Korea in 2014 and 2016, respectively. He is working toward the Ph.D. degree in Electronic Engineering at the same university.
-His research interests are transactive energy, energy data analysis, energy forecasting, machine learning and artficial intelligence in smart grid.
-
+Biography test
 ---
 
-서강대학교 전자공학과 융합통신망 연구실에서 박사 과정으로 재학 중입니다.
+데이터 사이언스 스쿨 1th 과정중입니다.
 
-주요 연구 분야는 스마트 그리드, 기계 학습, 데이터 분석입니다.
+기초수학, 통계분석, 머신런닝
+파이썬, 크롤링, DB, 백앤드, 서버
 
 ---
 ## Publications
 
-### Journal papers
-
-- [**Gaussian Residual Bidding based Coalition for Two-settlement Renewable Energy Market**](https://ieeexplore.ieee.org/document/8424158/)
-  - **S. Ryu**, S. Bae, J. Lee and H. Kim, IEEE Access, pp.43029 - 43038, Aug. 2018
-- [**Robust Operation of Energy Storage System with Uncertain Load Profiles**](http://nice.sogang.ac.kr/wordpress/uploads/shortbio/Documents/J31_energies-10-00416_jk_pr.pdf)
-  - J. K. Kim, Y. Choi, **S. Ryu**, and H. Kim, Energies, pp.1-15, Mar. 2017.
-
-- [**Deep Neural Network based Demand Side Short-Term Load Forecasting**](http://nice.sogang.ac.kr/wordpress/uploads/shortbio/Documents/J30_energies2016_sh_pr.pdf)
-  -  **S. Ryu**, J. Noh, and H. Kim, Energies, pp.1-20, Jan. 2017.
-
-- **Customer Load Pattern Analysis using Clustering Techniques**
-  - **S. Ryu**, D. Oh, J. Noh and H.Kim,  KEPCO Journal on Electric Power and Energy, pp.61-69, 2016
-
-- [**Data-Driven Baseline Estimation of Residential Buildings for Demand Response**](http://nice.sogang.ac.kr/wordpress/uploads/shortbio/Documents/J21_energies2015.pdf)
-  - S. Park, **S. Ryu**, Y. Choi, J. Kim and H. Kim, Energies, pp.10239-10259, 2015.
-
-
 ### Selected Conference Proceedings
 
-- [**Short-Term Load Forecasting based on ResNet and LSTM**](https://ieeexplore.ieee.org/abstract/document/8587554/)
+- [**예시**](https://ieeexplore.ieee.org/abstract/document/8587554/)
   - H. Choi, **S. Ryu** and H. Kim, IEEE SmartGridComm, 2018, pp.1-6.
 
 - [**Residential Load Profile Clustering via Deep Convolutional Autoencoder**](https://ieeexplore.ieee.org/abstract/document/8587454/)
@@ -66,7 +48,7 @@ His research interests are transactive energy, energy data analysis, energy fore
 ---
 ## Projects
 
-- **Optimal Control of Virtual Power Plant for Smart City (2016.10 ~ 2019.5)** funded by KEPCO KEPRI.
+- **예시**
 - **Community Energy Service Microgrid (2016.5 ~ 2018.12)** funded by KETEP.
 - **National Demand Response (2016.5 ~ 2018.12)** funded by KETEP.
 - **Korean Energy Storage System for Cellular Networks (2014.5 ~ 2017.4)** funded by NRF.
@@ -79,10 +61,5 @@ His research interests are transactive energy, energy data analysis, energy fore
 ---
 ## Awards
 
-- 2018 / Qualcomm & Sogang University / Qualcomm Best Paper Award / Gaussian Residual Bidding based Coalition for Two-settlement Renewable Energy Market / 최우수
-- 2018 / Qualcomm & Sogang University / Qualcomm Best Paper Award / Convolutional Autoencoder based Feature Extraction
-and Clustering for Customer Load Analysis / 장려
-- 2016 / 전력 거래소 / 에너지데이터를 활용한 사업모델 경진 대회 / 에너또 / 우수상
-- 2016 / 서강대학교 / 융합 기술 경진 대회 / Cal-log
-- 2014 / 서강대학교 전자공학과 / 우수 조교 선정 / 최우수
-- 2013 / 서강대학교 전자공학과 / 전자공학과 학술제 캡스톤 디자인 / WPS 기반 모바일 출석 체크 어플리케이션/ 동상
+- 예시
+- 2019 / Qualcomm & Sogang University / Qualcomm Best Paper Award / Gaussian Residual Bidding based Coalition for Two-settlement Renewable Energy Market / 우수
