@@ -33,7 +33,7 @@ print(">>", urljoin(baseUrl,"../img/img.jpg"))
 2. 태그로 접근 방식
 3. CSS 선택자로 접근 방식
 
-### 직접접근 방식 (soup.html.h1,p,...)
+## 직접접근 방식 (soup.html.h1,p,...)
 ```html
 <html><body>
   <h1>파이썬 BeautifulSoup 공부</h1>
@@ -69,7 +69,7 @@ print(p_4)
     그러나 next_sibling previous_sibling는 계속 크롤링 할때는 사용하지 않는다. 왜냐면 사이트가 수정되면 다른 값이 나오기 때문이다.
 
 
-### 태그로 접근 방식 (soup.find_all)
+## 태그로 접근 방식 (soup.find_all)
 ```html
 <html><body>
   <ul>
