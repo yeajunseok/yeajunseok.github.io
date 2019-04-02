@@ -26,7 +26,6 @@ print(">>", urljoin(baseUrl,"../index.html"))
     #결과: >> https://test.com/b.html
 print(">>", urljoin(baseUrl,"../img/img.jpg"))
     #결과: >> https://test.com/img/img.jpg
-
 ```
 
 # BeautifulSoup
