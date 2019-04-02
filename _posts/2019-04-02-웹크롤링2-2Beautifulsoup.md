@@ -69,7 +69,7 @@ print(p_4)
     그러나 next_sibling previous_sibling는 계속 크롤링 할때는 사용하지 않는다. 왜냐면 사이트가 수정되면 다른 값이 나오기 때문이다.
 
 
-## 태그로 접근 방식 (soup.find_all)
+## 태그로 접근 방식 (find_all, find)
 ```html
 <html><body>
   <ul>
@@ -85,7 +85,7 @@ soup = BeautifulSoup(html, 'html.parser')
 links_1 = soup.find_all("a") #a태그를 link변수에 한방에 담는다.
 print(type(links_1))
     #결과: <class 'bs4.element.ResultSet'>
-print(type(links_1), links_1)
+print(links_1)
     #결과: [<a href="http://www.naver.com">naver</a>, <a href="http://www.daum.net">daum</a>, <a href="https://www.google.com">google</a>, <a href="https://www.tistory.com">tistory</a>]
 
 for a in links_1:
@@ -109,7 +109,7 @@ links_4 = soup.find_all(sting=["naver","google"])
     links_1 = soup.find_all("a") #처럼 모든 a태그를 link변수에 담는데 이는 실전에서 너무 복잡할 수 있다.  
 
 
-## CSS 선택자로 접근 방식 (soup.select(), soup.select_one())
+## CSS 선택자로 접근 방식 (select, select_one)
 ```html
 <html><body>
 <div id="main">
