@@ -82,7 +82,7 @@ print(p_4)
 ```
 ```python
 soup = BeautifulSoup(html, 'html.parser')
-links_1 = soup.find_all("a") #a태그를 link변수에 한방에 담는다.
+links_1 = soup.find_all("a") #a태그를 link변수에 한방에 모두 담는다.
 print(type(links_1))
     #결과: <class 'bs4.element.ResultSet'>
 print(links_1)
@@ -157,3 +157,109 @@ for li in list_li:
     #결과: 안드로이드 블루투스 프로그래밍
 ```
     둘의 차이점은 갖고올게 한개라면 select_one을 사용하고, 아니면 select사용
+
+# 정규표현식
+## 정규표현식으로 find, find_all 이용
+```html
+<html><body>
+  <ul>
+    <li><a id="naver" href="http://www.naver.com">naver</a></li>
+    <li><a href="http://www.daum.net">daum</a></li>
+    <li><a href="http://www.daum.com">daum</a></li>
+    <li><a href="https://www.google.com">google</a></li>
+    <li><a href="https://www.tistory.com">tistory</a></li>
+  </ul>
+</body></html>
+```
+```python
+soup = BeautifulSoup(html, 'html.parser')
+print(soup.find(id = "naver").string) #id값으로 바로 찾기.
+    #결과값: naver
+#정규식으로 내가 원하는 조건으로 검색할 수 있다.
+import re
+
+li = soup.find_all(href=re.compile(r"^https://"))
+print(li) #결과값: [<a href="https://www.google.com">google</a>, <a href="https://www.tistory.com">tistory</a>]
+for e in li:
+    print(e.attrs['href'])
+        #결과값: https://www.google.com
+        #결과값: https://www.tistory.com
+li = soup.find_all(href=re.compile(r"da"))
+for e in li:
+    print(e.attrs['href'])
+        #결과값: http://www.daum.net
+        #결과값: http://www.daum.com
+
+```
+## 정규표현식으로 select, select_all 이용
+```html
+<div id="foods">
+  <h1>안주 및 주류</h1>
+  <ul id="fd-list">
+    <li class="food hot" data-lo="ko">닭도리탕</li>
+    <li class="food" data-lo="jp">돈까스</li>
+    <li class="food hot" data-lo="ko">삼겹살</li>
+    <li class="food" data-lo="us">스테이크</li>
+  </ul>
+  <ul id="ac-list">
+    <li class="alcohol" data-lo="ko">소주</li>
+    <li class="alcohol" data-lo="us">맥주</li>
+    <li class="alcohol" data-lo="ko">막걸리</li>
+    <li class="alcohol high" data-lo="cn">양주</li>
+    <li class="alcohol" data-lo="ko">동동주</li>
+  </ul>
+</div>
+```
+```python
+from bs4 import BeautifulSoup
+
+fp = open("food-list.html", encoding="utf-8")
+soup = BeautifulSoup(fp, "html.parser")
+
+#정규 표현식을 이용해서 CSS선택자로 다양한 예제로 뽑을수 있다.
+##select_one
+print("1", soup.select_one("li:nth-of-type(1)").string)
+print("2", soup.select_one("#ac-list > li:nth-of-type(4)").string)
+##select
+print("3", soup.select("#ac-list > li[data-lo='cn']")[0].string) #select는 list형태로 반환한다.
+print("4", soup.select("#ac-list > li.alcohol.high")[0].string)
+print("44", soup.select("#ac-list > li[class='alcohol']")[1].string) #select는 list형태로 반환한다.
+#find
+param = {"data-lo":"cn", "class":"alcohol"}
+print("5", soup.find("li",param).string)
+print("6", soup.find(id="ac-list").find("li",param).string)
+#find_all
+for ac in soup.find_all("li"):
+    if ac['data-lo'] == 'us':
+        print('data-lo == us', ac.string)
+
+```
+## 함수를 사용하여 select_one 이용
+```html
+<ul id="cars">
+  <li id="ge">Genesis</li>
+  <li id="av">Avante</li>
+  <li id="so">Sonata</li>
+  <li id="gr">Grandeur</li>
+  <li id="tu">Tucson</li>
+</ul>
+```
+```python
+from bs4 import BeautifulSoup
+
+fp = open("cars.html", encoding="utf-8")
+soup = BeautifulSoup(fp, "html.parser")
+
+def car_func(selector):
+    print("car_func", soup.select_one(selector).string)
+
+car_func("#gr")
+car_func("li#gr")
+car_func("ul > li#gr")
+car_func("#cars #gr")
+car_func("#cars > #gr")
+car_func("li[id=gr]")
+
+print("car_func",soup.select("li")[3].string)
+print("car_func",soup.find_all("li")[3].string)
+```
