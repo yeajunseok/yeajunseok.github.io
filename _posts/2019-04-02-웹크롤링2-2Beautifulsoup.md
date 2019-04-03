@@ -12,7 +12,7 @@ toc_label: "My Table of Contents"
 toc_sticky: true
 ---
 웹 크롤링 문법  
-직접접근, 태그로 접근, CSS선택자로 접근  
+직접접근, 태그로 접근, CSS선택자로 접근, 정규표현식
 
 # urljoin
 ```python
