@@ -1,5 +1,5 @@
 ---
-title: "파이썬 프로그래밍_4"
+title: "파이썬 프로그래밍_4_class"
 header:
  overlay_image: /assets/images/overlayimage.jpg
 categories:
@@ -11,7 +11,7 @@ toc: true
 toc_label: "My Table of Contents"
 toc_sticky: true
 ---
-class
+class, __init__, 상속, super, getter, setter, nonpublic, is a, has a, magic
 
 #class
 
@@ -88,11 +88,12 @@ c4.add()
 ---
 110
 ```
-#### Quiz (야구 타율)
+#### Quiz : 야구 타율
 - 데이터를 클래스와 객체로 나타내세요.
 - 타율을 계산하는 함수를 추가
 - 객체를 만들어서 각 선수의 타율(안타/타석)을 출력해주세요.
-- 타율은 소수 3째자리까지 출력 (round)
+- 타율은 소수 3째자리까지 출력 (round)  
+
 ```
 python - 476타석, 176안타
 data - 382타석, 120안타
@@ -107,20 +108,24 @@ class Player:
 
     def avg(self):
         return round(self.hit / self.bb, 3)
-```
+```  
+
 ```python
 python = Player(476, 176)
 data = Player(382, 120)
 fast = Player(422, 150)
 
 python.avg(), data.avg(), fast.avg()
-```
-#### Quiz (성적)
+```  
+
+#### Quiz : 성적
 - 학생의 국어, 영어, 수학 점수를 입력받아서 총점과 평균을 구하는 클래스를 만드세요.
 - 학생 한명이 하나의 객체
 - 두가지 방법
   - 생성자 함수에서 국어, 영어, 수학를 받도록 코드 작성
-  - 생성자 함수에서 과목의 갯수 제한 없이 데이터 받도록 코드 작성
+  - 생성자 함수에서 과목의 갯수 제한 없이 데이터 받도록 코드 작성  
+
+
 ```python
 class Student:
 
@@ -166,7 +171,6 @@ s1.total(), s1.avg(), s2.total(), s2.avg(), s3.total(), s3.avg()
 ```python
 # 계산기 클래스
 class Calculator:
-
     def __init__(self, num1, num2):
         self.num1 = num1
         self.num2 = num2
@@ -187,15 +191,17 @@ class ImprovedCalculator(Calculator):
 ic = ImprovedCalculator(2, 3)
 ic.add(), ic.sub(), ic.pow_func()
 ```
-####Quiz (아이폰)
+#### Quiz : 아이폰
 - 아이폰이 버전 1 ~ 3까지 업그레이드 되었습니다.
 - 상속을 이용해서 아이폰 버전 1 ~ 3까지의 클래스를 작성해주세요.
-- 기능들은 print(기능이름) 으로 출력이 되도록 함수내용을 작성
+- 기능들은 print(기능이름) 으로 출력이 되도록 함수내용을 작성  
+
 ```
 iPhone_1 : calling
 iPhone_2 : calling, send_msg
 iPhone_3 : calling, send_msg, internet
 ```
+
 ```python
 class Iphone1:
     def calling(self):
@@ -224,9 +230,11 @@ iphone3 = Iphone3()
 [var for var in dir(iphone3) if var[:2] != "__"]
 => ['calling', 'internet', 'send_msg']
 ```
+
 ## 4. 다중상속
 - 파이썬은 다중상속이 가능합니다.
-- 부모 클래스를 여러개 사용하는 방법
+- 부모 클래스를 여러개 사용하는 방법  
+
 ```
 # A -> C, B -> C (X)
 # A -> B -> C (O)
@@ -320,7 +328,7 @@ init C
 init B
 init A
 ```
-#### Quiz (스타크래프트)
+#### Quiz : 스타크래프트
 ```python
 class Human:
     def __init__(self):
@@ -443,9 +451,7 @@ person.hidden_name             => 'kim macbook'
 - 사용방법은 앞에 `__`를 붙여서 변수를 선언해줍니다.
 - 완벽한 방법은 아니고 `(객체이름)._(클래스명)(변수명)`으로 접근이 가능합니다.  
 
-```python
 
-```
 ## 8. 클래스의 메서드의 종류
 ## 9. is a / has a
 ## 10. magic method
