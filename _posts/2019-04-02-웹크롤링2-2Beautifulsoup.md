@@ -33,7 +33,7 @@ print(">>", urljoin(baseUrl,"../img/img.jpg"))
 2. 태그로 접근 방식
 3. CSS 선택자로 접근 방식
 
-## 직접접근 방식 (soup.html.h1,p,...)
+## 직접접근 방식 ; soup.html.h1,p
 ```html
 <html><body>
   <h1>파이썬 BeautifulSoup 공부</h1>
@@ -69,7 +69,9 @@ print(p_4)
     그러나 next_sibling previous_sibling는 계속 크롤링 할때는 사용하지 않는다. 왜냐면 사이트가 수정되면 다른 값이 나오기 때문이다.
 
 
-## 태그로 접근 방식 (find_all, find)
+## 태그로 접근 방식 : find, find_all
+- find() : 가장 먼저 검색되는 태그 반환
+- find_all() : 전체 태그 반환
 ```html
 <html><body>
   <ul>
@@ -109,7 +111,7 @@ links_4 = soup.find_all(sting=["naver","google"])
     links_1 = soup.find_all("a") #처럼 모든 a태그를 link변수에 담는데 이는 실전에서 너무 복잡할 수 있다.  
 
 
-## CSS 선택자로 접근 방식 (select, select_one)
+## CSS 선택자로 접근 방식 : select_one, select
 ```html
 <html><body>
 <div id="main">
