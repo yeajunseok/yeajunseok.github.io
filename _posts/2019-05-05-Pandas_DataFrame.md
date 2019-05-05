@@ -64,7 +64,7 @@ df.dtypes
 - row 추가
 - colunm 추가  
 
-##### row 데이터 추가하기
+#### row 데이터 추가하기
 ```python
 df.loc[2] = {"email":"ee@gmail.com", "Name":"dad", "id":3}
 
@@ -83,7 +83,7 @@ df.loc[len(df)] = {"email":"dae@gamil.com", "Name":"e32", "id":4}
 2	data	data@gmail.com	  3
 3	data2	data2@gmail.com	  4
 ```
-##### row 데이터 보기 & offset index
+#### row 데이터 보기 & offset index
 ```python
 df.loc[1]
 => Name              dss
@@ -108,7 +108,7 @@ df.loc[[1,3], ["email","id"]] #index 1과 3 그리고 column "email","id" 함께
 3	data2@gmail.com	 4
 ```
 
-##### 컬럼 데이터 추가하기
+#### 컬럼 데이터 추가하기
 ```python
 df["Address"] = ["Seoul", "Busan", "Jeju", "Deagu"]
 =>
@@ -127,7 +127,7 @@ df[["Address", "email"]]
 3	Deagu	  data2@gmail.com
 ```
 
-##### index 수정
+#### index 수정
 ```python
 pd.DataFrame(data=df.values, columns=df.columns, index=list("ABCD"))
 =>
@@ -154,6 +154,9 @@ df.index = range(4)
 3	data2	data2@gmail.com	4	 Deagu
 ```
 ### 3. apply
+- 모든 컬럼 요소에 함수를 적용해서 결과를 저장하는 방법
+- function의 map과 유사  
+
 ### 4. append
 ### 5. concat
 ### 6. groupby, aggregate
