@@ -207,17 +207,20 @@ df3["Age"]
 #둘의 차이점은 .reset_index()하면 DataFrame으로 만들어 준다.
 ```
 ### 5. concat
-- row, column으로 데이터 프레임을 합치는 함수
+- row, column으로 데이터 프레임을 합치는 함수  
+
 ```python
 pd.concat([df1, df2]).reset_index(drop=True) #세로로 합치기
 pd.concat([df3, df1], axis=1) #가로로 합치
 pd.concat([df3, df1], axis=1, join='inner') # nan 부분 제외
-```
+```  
+
 ### 6. groupby, aggregate
 - 특정 컬럼의 중복되는 row를 합쳐서 새로운 데이터 프레임을 만드는 방법
 - size : 데이터의 갯수를 출력
 - sort_values : 정렬
-- agg : min, max, mean .. 의 기능을 사용할수 있는 함수
+- agg : min, max, mean등 기능을 사용할수 있는 함수  
+
 ```python
 df.groupby("Name").size() #Name 안의 값들의 갯수를 알려준다.
 =>
@@ -266,8 +269,10 @@ df.groupby("Name").agg(["min","max","mean"]).reset_index()
 4	Billy	  28	28	28.0
 5	Data	  30	34	32.0
 6	Jin	    36	36	36.0
-```
-### 7. select
+```  
+
+### 7. select  
+
 ```python
   Name	         Age
        min	max	mean
@@ -277,7 +282,8 @@ df.groupby("Name").agg(["min","max","mean"]).reset_index()
 
 df.loc[2]["Age"]["max"]
 => 21
-```
+```  
+
 ### 8. merge
 - 두개 이상의 데이터 프레임을 합쳐서 하나의 데이터 프레임으로 만드는 방법
 
