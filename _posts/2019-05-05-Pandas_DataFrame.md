@@ -156,9 +156,137 @@ df.index = range(4)
 ### 3. apply
 - 모든 컬럼 요소에 함수를 적용해서 결과를 저장하는 방법
 - function의 map과 유사  
+```python
+df["Address"] = df["Address"].apply(
+  lambda addr: "{}({})".format(addr, len(addr)) )
 
+df["Domain"] = df["email"].apply(
+  lambda data: re.findall("[\w]+@([0-9a-z]+)[.][0-9a-z]+", data)[0])
+
+s = "pdj@gmail.com"
+p = "[\w]+@([0-9a-z]+)[.][0-9a-z]+"
+re.findall(p, s)[0]
+=> 'gmail'
+```
 ### 4. append
+- 데이터 프레임을 합치고 싶을때
+```python
+df3 = df1.append(df2) #기본적으로 세로로 합쳐짐
+df1.append(df2, ignore_index = True)
+```
+#### reset_index
+```python
+df3.reset_index()
+=>
+      index	Age	Name
+0	    0	    26	Alan
+1	    1	    33	Alex
+2	    2	    33	Jin
+3	    3	    40	Science
+4	    4	    32	Jin
+5	    0	    29	Data
+6	    1	    25	Jin
+7	    2	    28	Alvin
+8	    3	    29	Alan
+9	    4	    39 	Fast
+df3.reset_index(drop=True, inplace=True)
+=>
+  Age	Name
+0	26	Alan
+1	33	Alex
+2	33	Jin
+3	40	Science
+4	32	Jin
+5	29	Data
+6	25	Jin
+7	28	Alvin
+8	29	Alan
+9	39	Fast
+df3["Age"].reset_index()
+df3["Age"]
+#둘의 차이점은 .reset_index()하면 DataFrame으로 만들어 준다.
+```
 ### 5. concat
+- row, column으로 데이터 프레임을 합치는 함수
+```python
+pd.concat([df1, df2]).reset_index(drop=True) #세로로 합치기
+pd.concat([df3, df1], axis=1) #가로로 합치
+pd.concat([df3, df1], axis=1, join='inner') # nan 부분 제외
+```
 ### 6. groupby, aggregate
+- 특정 컬럼의 중복되는 row를 합쳐서 새로운 데이터 프레임을 만드는 방법
+- size : 데이터의 갯수를 출력
+- sort_values : 정렬
+- agg : min, max, mean .. 의 기능을 사용할수 있는 함수
+```python
+df.groupby("Name").size() #Name 안의 값들의 갯수를 알려준다.
+=>
+Name
+Adam      2
+Alan      1
+Alex      2
+Andrew    1
+Billy     1
+Data      2
+Jin       1
+dtype: int64
+
+df.groupby("Name").size().reset_index(name = "counts")
+=>
+  Name	counts
+0	Adam	  2
+1	Alan	  1
+2	Alex	  2
+3	Andrew	1
+4	Billy	  1
+5	Data	  2
+6	Jin	    1
+
+#정렬
+df.sort_values(by=["counts", "Name"], ascending=False)
+#agg 함수
+df.groupby("Name").agg("sum").reset_index()
+=>
+  Name	  Age
+0	Adam	  77
+1	Alan	  28
+2	Alex	  41
+3	Andrew	22
+4	Billy	  28
+5	Data	  64
+6	Jin	    36
+df.groupby("Name").agg(["min","max","mean"]).reset_index()
+=>
+  Name	           Age
+         min	max	mean
+0	Adam	  38	39	38.5
+1	Alan	  28	28	28.0
+2	Alex	  20	21	20.5
+3	Andrew	22	22	22.0
+4	Billy	  28	28	28.0
+5	Data	  30	34	32.0
+6	Jin	    36	36	36.0
+```
 ### 7. select
+```python
+  Name	         Age
+       min	max	mean
+0	Adam	38	39	38.5
+1	Alan	28	28	28.0
+2	Alex	20	21	20.5
+
+df.loc[2]["Age"]["max"]
+=> 21
+```
 ### 8. merge
+- 두개 이상의 데이터 프레임을 합쳐서 하나의 데이터 프레임으로 만드는 방법
+
+```python
+money_df.merge(user_df, left_on="ID", right_on="UserID")
+pd.merge(money_df, user_df)
+```
+
+```python
+df.["ID"].unique()
+df.rename(columns={"UserID":"ID"})
+```
