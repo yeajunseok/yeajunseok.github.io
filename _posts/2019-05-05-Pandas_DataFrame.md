@@ -296,3 +296,5 @@ pd.merge(money_df, user_df)
 df.["ID"].unique()
 df.rename(columns={"UserID":"ID"})
 ```
+
+|![ads1](/assets/images/test.jpg)|
