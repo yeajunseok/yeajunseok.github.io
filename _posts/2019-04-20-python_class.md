@@ -13,7 +13,7 @@ toc_sticky: true
 ---
 class, __init__, 상속, super, getter, setter, nonpublic, is a, has a, magic
 
-#class
+# class
 
 ## 1. 클래스의 구조
 - self : 객체 자신을 의미
@@ -88,7 +88,7 @@ c4.add()
 ---
 110
 ```
-#### Quiz : 야구 타율
+### Quiz : 야구 타율
 - 데이터를 클래스와 객체로 나타내세요.
 - 타율을 계산하는 함수를 추가
 - 객체를 만들어서 각 선수의 타율(안타/타석)을 출력해주세요.
@@ -118,7 +118,7 @@ fast = Player(422, 150)
 python.avg(), data.avg(), fast.avg()
 ```  
 
-#### Quiz : 성적
+### Quiz : 성적
 - 학생의 국어, 영어, 수학 점수를 입력받아서 총점과 평균을 구하는 클래스를 만드세요.
 - 학생 한명이 하나의 객체
 - 두가지 방법
@@ -191,7 +191,7 @@ class ImprovedCalculator(Calculator):
 ic = ImprovedCalculator(2, 3)
 ic.add(), ic.sub(), ic.pow_func()
 ```
-#### Quiz : 아이폰
+### Quiz : 아이폰
 - 아이폰이 버전 1 ~ 3까지 업그레이드 되었습니다.
 - 상속을 이용해서 아이폰 버전 1 ~ 3까지의 클래스를 작성해주세요.
 - 기능들은 print(기능이름) 으로 출력이 되도록 함수내용을 작성  
@@ -328,7 +328,7 @@ init C
 init B
 init A
 ```
-#### Quiz : 스타크래프트
+### Quiz : 스타크래프트
 ```python
 class Human:
     def __init__(self):
