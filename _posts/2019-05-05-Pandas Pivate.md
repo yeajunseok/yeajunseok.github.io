@@ -1,11 +1,11 @@
 ---
-title: "파이썬 프로그래밍_8_Pandas_Pivot"
+title: "파이썬 프로그래밍_9_Pandas_Pivot"
 header:
  overlay_image: /assets/images/overlayimage.jpg
 categories:
-  - Numpy_Pandas
+  - Numpy & Pandas
 tags:
-  - Numpy_Pandas
+  - Numpy & Pandas
 use_math: true
 toc: true
 toc_label: "My Table of Contents"
