@@ -8,7 +8,7 @@ tags:
   - python
 use_math: true
 toc: true
-toc_label: "My Table of Contents"
+toc_label: "페이지 주요 목차"
 toc_sticky: true
 ---
 class, __init__, 상속, super, getter, setter, nonpublic, is a, has a, magic

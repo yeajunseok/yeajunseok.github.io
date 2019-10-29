@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko"
-title                    : "Data Science"
+title                    : "지식 저장소"
 title_separator          : "-"
 name                     : "YeaJunSeok"
-description              : "데이터 사이언스로 가는 여정~"
+description              : "지식들을 쌓아가는 깃 블로그"
 url                      : "https://yeajunseok.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "yeajunseok/yeajunseok.github.io"
@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Yea JunSeok"
-  avatar           : "/assets/images/data-analysis.jpg"
+  avatar           : "/assets/images/domain.jpg"
   bio              : "정리 공간입니다~"
   location         : "Seoul, Korea"
   email            :
@@ -219,7 +219,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5 # 첫 페이지에 보여줄 최근 게시물 수를 지정
 paginate_path: /page:num/
 timezone: Asia/Seoul
 

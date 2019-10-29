@@ -8,7 +8,7 @@ tags:
   - python
 use_math: true
 toc: true
-toc_label: "My Table of Contents"
+toc_label: "페이지 주요 목차"
 toc_sticky: true
 ---
 try, except, finall, raise, 예외처리 만들기

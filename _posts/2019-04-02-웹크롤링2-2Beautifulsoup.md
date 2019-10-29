@@ -8,7 +8,7 @@ tags:
   - BeautifulSoup
   - urljoin
 toc: true
-toc_label: "My Table of Contents"
+toc_label: "페이지 주요 목차"
 toc_sticky: true
 ---
 웹 크롤링 문법  
