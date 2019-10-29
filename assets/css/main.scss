@@ -6,7 +6,7 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic'); // 구글 웹 폰트 임포트
+// @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic'); // 구글 웹 폰트 임포트
 
 html {
     font-size: 14px; // originally 16px
